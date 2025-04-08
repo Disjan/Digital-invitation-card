@@ -1,0 +1,26 @@
+{
+  "name": "birthday_invitation",
+  "version": "1.0.0",
+  "description": "Birthday invitation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Disjan/html-portfolio.git"
+  },
+  "author": "DH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Disjan/html-portfolio/issues"
+  },
+  "homepage": "https://github.com/Disjan/html-portfolio#readme",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9"
+  }
+}

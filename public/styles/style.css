@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/image/Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.title{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    padding-top: 60px;
+    height: 50px;
+}
+.title-img{
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    
+    
+}
+
+.accept{
+    background-image: url("/image/Button_zusage.png");
+}
+
+.decline{
+    background-image: url("/image/Button_absage.png");
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+  }
+
+  
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .title{
+        position: absolute;
+        top: 40px;
+    }
+}
+
+@media(min-width: 800px ) {
+    body{
+        background-image: url("/image/Background_Desktop.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .title{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 100px;
+        padding-top: 80px;
+        height: 50px;
+        width: 100%;
+    }
+
+
+  
+}
