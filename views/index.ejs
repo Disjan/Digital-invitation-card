@@ -13,13 +13,18 @@
      <div  class="container">
         <div class = "title" >
             <img src="/image/title.png" alt="Title" class="title-img">
-        </div>
-        <div class = "Infobox">
+            <div class = "infobox">
+                <p><strong>Wo: </strong> <%= ort %></p>
+                <p><strong>Wann: </strong>Wann: <%= datum %></p>
+                <p><strong>Uhrzeit: </strong> <%= uhrzeit %></p>
+                <p><strong>Rückmeldung bis: </strong> <%= rückmeldung %></p>
+            </div>
         </div>
         <div typ="button" id="accept" class="btn accept">
-            
+            <img src="/image/Button_zusage.png" alt="Zusage">
         </div>
         <div typ="button" id="decline" class="btn decline">
+            <img src="/image/Button_absage.png" alt="Absage">
         
         </div>
     </div>
