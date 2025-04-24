@@ -29,12 +29,26 @@ body{
     
 }
 
+.accept{
+    background-image: url("/image/Button_zusage.png");
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    
+}
+
+.decline{
+    background-image: url("/image/Button_absage.png");
+}
+
 .infobox{
+    font-size: 1.5rem;
     background-color: lightblue;
     justify-content: flex-end;
     align-items: center;
     padding-right: 40px;
-    border-radius: 50%;
+    padding-top: 100px;
+    border-radius: 10%;
     border: solid;
     opacity: 0.5;
     max-width: 200px;
@@ -42,13 +56,6 @@ body{
     
 }
 
-.accept{
-    background-image: url("/image/Button_zusage.png");
-}
-
-.decline{
-    background-image: url("/image/Button_absage.png");
-}
 
 .container {
     display: flex;
