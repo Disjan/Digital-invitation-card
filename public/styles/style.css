@@ -1,101 +1,90 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-image: url("/image/Background.png");
+  }
+  
+  body {
+    background-image: url("/image/Background_Desktop.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.title{
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 40px;
-    padding-top: 60px;
-    height: 50px;
-}
-.title-img{
-    max-width: 200px;
-    height: auto;
-    object-fit: contain;
     
-    
-}
-
-.accept{
-    background-image: url("/image/Button_zusage.png");
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 40px;
-    
-}
-
-.decline{
-    background-image: url("/image/Button_absage.png");
-}
-
-.infobox{
-    font-size: 1.5rem;
-    background-color: lightblue;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 40px;
-    padding-top: 100px;
-    border-radius: 10%;
-    border: solid;
-    opacity: 0.5;
-    max-width: 200px;
-    height: auto;
-    
-}
-
-
-.container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 1rem;
   }
-
+  
+  .container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 50px;
+  }
+  
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-right: 100px;
+    
+  }
+  
+  .title-img {
+    max-width: 300px;
+    height: auto;
+    
+  }
+  
+  .infobox {
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.4rem;
+    background-color: rgba(173, 216, 230, 0.7);
+    padding: 20px;
+    line-height: 2rem; 
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    text-align: left;
+  }
+  
+  .button-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 120px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .accept {
+    background-image: url("/image/Button_zusage.png");
+  }
+  
+  .decline {
+    background-image: url("/image/Button_absage.png");
+  }
   
 @media(max-width: 768px){
     .container{
-        flex-direction: column;
-        padding: 10px;
+       justify-content: center;
+    }
+    .content-box{
+      align-items: center;
     }
 
-    .title{
-        position: absolute;
-        top: 40px;
-    }
+   .button-box{
+    justify-content: center;
+   }
 }
 
-@media(min-width: 800px ) {
-    body{
-        background-image: url("/image/Background_Desktop.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
 
-    .title{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 150px;
-        padding-top: 100px;
-        height: 50px;
-        width: 100%;
-    }
-
-
-  
-}
